@@ -3,8 +3,8 @@ package com.lc;
 public class Main {
 	
 	public static void main(String[] args) {
-		Point p1 = new Point(1,4);
-		Point p2 = new Point(7,8);
+		Point p1 = new Point(1, 4);
+		Point p2 = new Point(7, 6);
 		
 		Point p3 =new Point(1, 4);
 		Point p4 =new Point(7, 6);
@@ -22,6 +22,13 @@ public class Main {
 			System.out.println("Lengths are equal");
 		else
 			System.out.println("Length are not equal");
+		
+		int ret = length1.compareTo(length2);
+		if(ret == 0)
+			System.out.println("Lines are equals");
+		else if(ret > 0)
+			System.out.println("length1 is gretter than length2");
+		else
+			System.out.println("length1 is less than length2");
 	}
-
 }
